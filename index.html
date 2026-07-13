@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="top">
+  <h1 class="project-title">Learning Tactile-Aware Quadrupedal<br>Loco-Manipulation Policies</h1>
+  <nav class="jump-links" aria-label="Project links">
+    <a href="#paper-title">paper</a>
+    <a href="#code-data">code</a>
+  </nav>
+
+  <img src="media/overview_full.svg" class="content-media" alt="Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies">
+
+  <div class="pub-row">
+    <div class="pub-box">
+      <p id="paper-title" class="pub-title">Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies</p>
+        <p class="pub-authors">
+        <a href="https://pokuangzhou.github.io/website/" target="_blank" rel="noopener noreferrer">Pokuang Zhou</a><sup>1</sup>,
+        <a href="https://yuhao-zhou.com/" target="_blank" rel="noopener noreferrer">Yuhao Zhou</a><sup>1</sup>,
+        <a href="https://quan-luu.github.io/" target="_blank" rel="noopener noreferrer">Quan Khanh Luu</a><sup>1</sup>,
+        <a href="https://www.purduemars.com/people" target="_blank" rel="noopener noreferrer">Seungho Han</a><sup>1</sup>,
+        <a href="https://scholar.google.com/citations?user=5KhgNnoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Heng Zhang</a><sup>1,2</sup>,
+        <a href="https://binghao-huang.github.io/" target="_blank" rel="noopener noreferrer">Binghao Huang</a><sup>3</sup>,
+        <a href="https://yunzhuli.github.io/" target="_blank" rel="noopener noreferrer">Yunzhu Li</a><sup>3</sup>,
+        <a href="https://www.iit.it/people-details/-/people/arash-ajoudani" target="_blank" rel="noopener noreferrer">Arash Ajoudani</a><sup>2</sup>,
+        <a href="https://zhengtongxu.github.io/website/" target="_blank" rel="noopener noreferrer">Zhengtong Xu</a><sup>1,&dagger;</sup>,
+        <a href="https://www.purduemars.com/people" target="_blank" rel="noopener noreferrer">Yu She</a><sup>1,&dagger;</sup>
+        </p>
+        <p class="pub-affiliations">
+        <sup>1</sup>Purdue University, West Lafayette, IN, USA &nbsp;|&nbsp;
+        <sup>2</sup>Istituto Italiano di Tecnologia, Genoa, Italy &nbsp;|&nbsp;
+        <sup>3</sup>Columbia University, New York, NY, USA<br>
+        &dagger; Corresponding Author
+        </p>
+
+        <div class="affiliation-logos">
+        <a href="https://www.purdue.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="media/purdue_logo.svg" alt="Purdue University">
+        </a>
+
+        <a href="https://www.iit.it/" target="_blank" rel="noopener noreferrer">
+            <img src="media/iit-v4-logo_generic-t1-neg.png" alt="Istituto Italiano di Tecnologia">
+        </a>
+
+        <a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="media/columbia_logo.svg" alt="Columbia University">
+        </a>
+        </div>
+      <p class="pub-tag">IROS 2026</p>
+      <a class="pub-link" href="https://arxiv.org/abs/2604.27224" target="_blank">arXiv</a>
+    </div>
+    <div class="pub-box">
+      <p class="pub-title">Learning to Plan and Track Tactile Interaction for Quadrupedal Loco-Manipulation</p>
+      <p class="pub-authors">
+        <a href="https://pokuangzhou.github.io/website/" target="_blank" rel="noopener noreferrer">Pokuang Zhou</a><sup>1</sup>,
+        <a href="https://www.linkedin.com/in/le-mao-515b28304/" target="_blank" rel="noopener noreferrer">Le Mao</a><sup>2</sup>,
+        <a href="https://camplab.ai/people/" target="_blank" rel="noopener noreferrer">Xiyue Chen</a><sup>3</sup>,
+        <a href="https://zhangzhiyuanzhang.github.io/personal_website/" target="_blank" rel="noopener noreferrer">Zhiyuan Zhang</a><sup>1</sup>,
+        <a href="https://camplab.ai/people/joseph-campbell/" target="_blank" rel="noopener noreferrer">Joseph Campbell</a><sup>2</sup>,
+        <a href="https://www.purduemars.com/people" target="_blank" rel="noopener noreferrer">Yu She</a><sup>1</sup>
+        </p>
+        <p class="pub-affiliations">
+        <sup>1</sup>Industrial Engineering School &nbsp;|&nbsp;
+        <sup>2</sup>Computer Science School &nbsp;|&nbsp;
+        <sup>3</sup>Electrical and Computer Engineering School<br>
+        Purdue University, West Lafayette, IN, USA
+        </p>
+
+        <div class="affiliation-logos">
+        <a href="https://www.purdue.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="media/purdue_logo.svg" alt="Purdue University">
+        </a>
+        </div>
+      <p class="pub-tag pub-tag-soon">Coming Soon</p>
+    </div>
+  </div>
+
+  <h2 id="code-data" class="code-data-heading">Code, Pretrained Checkpoints, and Data</h2>
+  <pre id="code-data-note" class="pub-note"><code><svg class="pub-note-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>Code and <img class="pub-note-icon hf-icon" src="media/hugging-face-icon-seeklogo.svg" width="16" height="16" alt="Hugging Face">Data will be fully open-sourced once the journal article is published.<br>Preview version code: including simulation and real-world deployment. <a href="https://github.com/PokuangZhou/tactile-aware-quadrupedal-loco-manipulation/tree/main/code" target="_blank" rel="noopener noreferrer">📂link</a></code></pre>
+
+  <div class="clone-code-block">
+    <p>Clone code:</p>
+    <div class="code-toolbar">
+      <span>bash</span>
+      <button id="copy-clone-command" type="button" aria-label="Copy clone command">Copy</button>
+    </div>
+    <pre><code id="clone-command">git clone --depth 1 --filter=blob:none --no-checkout https://github.com/PokuangZhou/tactile-aware-quadrupedal-loco-manipulation.git &amp;&amp; cd tactile-aware-quadrupedal-loco-manipulation &amp;&amp; git sparse-checkout init &amp;&amp; git sparse-checkout set "/code/" &amp;&amp; git checkout main</code></pre>
+  </div>
+</header>
+
+<section id="representative-gallery" class="media-gallery">
+  <h2>Selected Video Gallery</h2>
+  <p class="section-subtitle">The videos present selected results, including the low-level policy, autonomous policies, and simulation experiments. The complete set of results will be released after the journal paper is published.</p>
+
+  <div class="gallery-tabs" role="tablist" aria-label="Selected video gallery">
+    <button class="gallery-btn active" type="button" role="tab" aria-selected="true" data-src="media/locomotion_wild.mp4" data-title="locomotion in the wild">locomotion in the wild</button>
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/low_level_test.mp4" data-title="low-level interaction">low-level interaction</button>
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/open_door.mp4" data-title="open cabinet door">open cabinet door</button>
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/wrench.mp4" data-title="wrench tight screw">wrench tight screw</button>
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/potato_chips.mp4" data-title="pick chips">pick chips</button>
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/reori_insert.mp4" data-title="reorient and insert">reorient and insert</button>
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/sim1.mp4" data-title="sim1">sim1</button>
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/simple_pick.mp4" data-title="sim2">sim2</button>
+  </div>
+
+  <figure class="media-gallery-item">
+    <h3 id="media-gallery-title">locomotion in the wild</h3>
+    <video id="media-gallery-video" src="media/locomotion_wild.mp4" controls muted playsinline preload="metadata"></video>
+  </figure>
+</section>
+
+<section id="bibtex">
+  <h2>BibTeX</h2>
+
+  <pre><code>@article{zhou2026learning,
+  title={Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies},
+  author={Zhou, Pokuang and Zhou, Yuhao and Luu, Quan Khanh and Han, Seungho and Zhang, Heng and Huang, Binghao and Li, Yunzhu and Ajoudani, Arash and Xu, Zhengtong and She, Yu},
+  journal={arXiv preprint arXiv:2604.27224},
+  year={2026}
+}</code></pre>
+</section>
+
+<script>
+  const galleryButtons = document.querySelectorAll('#representative-gallery .gallery-btn');
+  const galleryTitle = document.getElementById('media-gallery-title');
+  const galleryVideo = document.getElementById('media-gallery-video');
+
+  galleryButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const { src, title } = button.dataset;
+
+      galleryButtons.forEach((item) => {
+        item.classList.remove('active');
+        item.setAttribute('aria-selected', 'false');
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
+      galleryTitle.textContent = title;
+
+      galleryVideo.src = src;
+      galleryVideo.load();
+      galleryVideo.play().catch(() => {});
+    });
+  });
+
+  const copyCloneButton = document.getElementById('copy-clone-command');
+  const cloneCommand = document.getElementById('clone-command');
+
+  copyCloneButton.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(cloneCommand.textContent);
+      copyCloneButton.textContent = 'Copied!';
+      setTimeout(() => {
+        copyCloneButton.textContent = 'Copy';
+      }, 1600);
+    } catch {
+      copyCloneButton.textContent = 'Copy failed';
+    }
+  });
+</script>
+
+</body>
+</html>

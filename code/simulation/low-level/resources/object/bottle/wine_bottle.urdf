@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot name="wine_bottle">
+  <link name="wine_bottle">
+    <visual>
+      <origin rpy="1.5708 0 0" xyz="0 0 -0.5"/>
+      <geometry>
+        <mesh filename="wine_bottle.obj" scale="1.2 1.2 1.2" />
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin rpy="1.5708 0 0" xyz="0 0 -0.5"/>
+      <geometry>
+        <mesh filename="wine_bottle.obj" scale="1.2 1.2 1.2" />
+      </geometry>
+      <sdf resolution="128" />
+    </collision>
+
+    <inertial>
+      <mass value="1.0" />
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01" />
+      <origin xyz="0 0 0" />
+    </inertial>
+  </link>
+
+</robot>
