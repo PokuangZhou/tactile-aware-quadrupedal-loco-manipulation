@@ -1,0 +1,12 @@
+# Blender 4.3.2 MTL File: 'aloha_gripper_tactile.blend'
+# www.blender.org
+
+newmtl Material.001
+Ns 50.000000
+Ka 0.327059 0.162353 0.044706
+Kd 0.327059 0.162353 0.044706
+Ks 0.044000 0.041000 0.038000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2

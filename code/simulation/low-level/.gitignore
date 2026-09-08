@@ -1,0 +1,61 @@
+# Ignore all low-level simulation content by default.  Keep only the minimum
+# source, assets, and checkpoint required to run tactile_utils/play_demo.py.
+*
+!.gitignore
+!setup.py
+!LICENSE
+
+# Python sources imported by play_demo.py.
+!tactile_utils/
+!tactile_utils/play_demo.py
+!tactile_utils/play_umi_tac.py
+!tactile_utils/tactile_sensor.py
+!tactile_utils/torch_utils.py
+
+# Dynamically imported by play_demo.py to construct the low-level policy.
+!legged_gym/
+!legged_gym/envs/
+!legged_gym/envs/whole_body_control/
+!legged_gym/envs/whole_body_control/utils/
+!legged_gym/envs/whole_body_control/utils/actor_critic.py
+
+# URDFs and their mesh dependencies used by play_demo.py.
+!resources/
+!resources/go2d1_tactile_array/
+!resources/go2d1_tactile_array/urdf/
+!resources/go2d1_tactile_array/urdf/go2d1_umi_tac.urdf
+!resources/go2d1_tactile_array/meshes/
+!resources/go2d1_tactile_array/meshes/base.dae
+!resources/go2d1_tactile_array/meshes/hip.dae
+!resources/go2d1_tactile_array/meshes/thigh.dae
+!resources/go2d1_tactile_array/meshes/thigh_mirror.dae
+!resources/go2d1_tactile_array/meshes/calf.dae
+!resources/go2d1_tactile_array/meshes/calf_mirror.dae
+!resources/go2d1_tactile_array/meshes/foot.dae
+!resources/go2d1_tactile_array/meshes/D1_meshes/
+!resources/go2d1_tactile_array/meshes/D1_meshes/base_link.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/Empty_Link1.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/Empty_Link2.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/Empty_Link3.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/Empty_Link4.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/Empty_Link5.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/Empty_Link6.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/finger_left.obj
+!resources/go2d1_tactile_array/meshes/D1_meshes/finger_left.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/finger_left.mtl
+!resources/go2d1_tactile_array/meshes/D1_meshes/finger_right.obj
+!resources/go2d1_tactile_array/meshes/D1_meshes/finger_right.STL
+!resources/go2d1_tactile_array/meshes/D1_meshes/finger_right.mtl
+!resources/go2d1_tactile_array/meshes/D1_meshes/flat_pad.obj
+!resources/go2d1_tactile_array/meshes/D1_meshes/flat_pad.mtl
+!resources/object/
+!resources/object/bottle/
+!resources/object/bottle/wine_bottle.urdf
+!resources/object/bottle/wine_bottle.obj
+!resources/object/bottle/wine_bottle.mtl
+
+# Default whole-body-control checkpoint used by play_demo.py.
+!logs/
+!logs/whole_body_control/
+!logs/whole_body_control/0601/
+!logs/whole_body_control/0601/ac_weights_45000.pt

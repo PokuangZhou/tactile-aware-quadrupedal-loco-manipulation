@@ -1,0 +1,6 @@
+/home/pokuang/project/walk-these-ways-go2/go2_gym_deploy/scripts/CMakeFiles/rebuild_cache.dir
+/home/pokuang/project/walk-these-ways-go2/go2_gym_deploy/scripts/CMakeFiles/edit_cache.dir
+/home/pokuang/project/walk-these-ways-go2/go2_gym_deploy/scripts/CMakeFiles/release_mcf.dir
+/home/pokuang/project/walk-these-ways-go2/go2_gym_deploy/scripts/CMakeFiles/check_sports_mode.dir
+/home/pokuang/project/walk-these-ways-go2/go2_gym_deploy/scripts/CMakeFiles/lcm_receive.dir
+/home/pokuang/project/walk-these-ways-go2/go2_gym_deploy/scripts/CMakeFiles/lcm_position_go2.dir
