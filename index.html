@@ -9,6 +9,17 @@
 
 <body>
 
+<nav class="side-nav" aria-label="Page sections">
+  <a href="#top">Home</a>
+  <a href="#article-session-1">Article Session 1</a>
+  <a href="#poster">Poster</a>
+  <a href="#code-data">Code, Pretrained Checkpoints, and Data</a>
+  <a href="#representative-gallery">Selected Video Gallery I</a>
+  <a href="#article-session-2">Article Session 2</a>
+  <a href="#active-locomotion-gallery">Selected Video Gallery II</a>
+  <a href="#bibtex">BibTeX</a>
+</nav>
+
 <header id="top">
   <h1 class="project-title">Learning Tactile-Aware Quadrupedal<br>Loco-Manipulation Policies</h1>
   <nav class="jump-links" aria-label="Project links">
@@ -19,7 +30,7 @@
 
   <img src="media/overview_full.svg" class="content-media" alt="Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies">
 
-  <div class="pub-row">
+  <div id="article-session-1" class="pub-row">
     <div class="pub-box">
       <p id="paper-title" class="pub-title">Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies</p>
         <p class="pub-authors">
@@ -58,7 +69,7 @@
       <a class="pub-link" href="https://arxiv.org/pdf/2604.27224" target="_blank">arXiv</a>
     </div>
     <div class="pub-box">
-      <p class="pub-title">Learning to Plan and Track Tactile Interaction for Quadrupedal Loco-Manipulation</p>
+      <p class="pub-title">Learning Tactile-Aware Hierarchical Whole-Body Control Policies for Quadrupedal Loco-Manipulation</p>
       <p class="pub-authors">
         <a href="https://pokuangzhou.github.io/website/" target="_blank" rel="noopener noreferrer">Pokuang Zhou</a><sup>1,*</sup>,
         <a href="https://www.linkedin.com/in/le-mao-515b28304/" target="_blank" rel="noopener noreferrer">Le Mao</a><sup>2,*</sup>,
@@ -84,6 +95,31 @@
     </div>
   </div>
 
+  <div id="poster" class="poster-section" aria-labelledby="poster-heading">
+    <h2 id="poster-heading">Poster</h2>
+    <div class="poster-viewer">
+      <object
+        data="media/poster_tactile_robotdog.pdf#page=1&amp;view=FitH&amp;toolbar=0&amp;navpanes=0&amp;scrollbar=1"
+        type="application/pdf"
+        aria-label="Tactile-aware quadrupedal loco-manipulation poster preview"
+      >
+        <p>
+          Your browser cannot display the poster preview.
+          <a href="media/poster_tactile_robotdog.pdf" target="_blank" rel="noopener noreferrer">Open the poster PDF</a>.
+        </p>
+      </object>
+      <a
+        class="poster-open-link"
+        href="media/poster_tactile_robotdog.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open the poster PDF in a new tab to enlarge it"
+      >
+        <span>Open full poster</span>
+      </a>
+    </div>
+  </div>
+
   <h2 id="code-data" class="code-data-heading">Code, Pretrained Checkpoints, and Data</h2>
   <pre id="code-data-note" class="pub-note"><code><svg class="pub-note-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>Code and <img class="pub-note-icon hf-icon" src="media/hugging-face-icon-seeklogo.svg" width="16" height="16" alt="Hugging Face">Data will be fully open-sourced once the journal article is published.<br>We have also released the WBC training logs, with the results reproduced across multiple random seeds and GPUs. <a href="https://wandb.ai/lemao/go2d1_low/reports/Low-Level--VmlldzoxNzY1OTc3MA?accessToken=ma2omlzq0bvytb7t0bbzxhezkwtb0aglaig9rxh7czu469k747m6l74t0eu14g47" target="_blank" rel="noopener noreferrer"><img class="pub-note-icon wandb-icon" src="media/wandb-icon.svg" width="16" height="16" alt="Weights &amp; Biases">link</a><br>Preview version code: including simulation and real-world deployment. <a href="https://github.com/PokuangZhou/tactile-aware-quadrupedal-loco-manipulation/tree/main/code" target="_blank" rel="noopener noreferrer">📂link</a></code></pre>
 
@@ -98,7 +134,7 @@
 </header>
 
 <section id="representative-gallery" class="media-gallery">
-  <h2>Selected Video Gallery</h2>
+  <h2>Selected Video Gallery I</h2>
   <p class="section-subtitle">The videos present selected results, including the low-level policy, autonomous policies, and simulation experiments. The complete set of results will be released after the journal paper is published.</p>
 
   <div class="gallery-tabs" role="tablist" aria-label="Selected video gallery">
@@ -116,6 +152,58 @@
   <figure class="media-gallery-item">
     <h3 id="media-gallery-title">whole body control</h3>
     <video id="media-gallery-video" src="media/wbc_whole_compress.mp4" controls muted playsinline preload="metadata"></video>
+  </figure>
+</section>
+
+<section id="article-session-2" class="publication-highlight" aria-label="Additional publication">
+  <div class="pub-row publication-layout">
+    <article class="pub-box">
+      <p class="pub-title">Tactile-Guided Quadrupedal Active Loco-Manipulation with Physical 3D Point Clouds</p>
+      <p class="pub-authors">
+        <a href="https://pokuangzhou.github.io/website/" target="_blank" rel="noopener noreferrer">Pokuang Zhou</a><sup>1,*</sup>,
+        <a href="https://www.linkedin.com/in/le-mao-515b28304/" target="_blank" rel="noopener noreferrer">Le Mao</a><sup>2,*</sup>,
+        <a href="https://www.purduemars.com/people" target="_blank" rel="noopener noreferrer">Yu She</a><sup>1</sup>
+      </p>
+      <p class="pub-affiliations">
+        <sup>1</sup>Industrial Engineering School &nbsp;|&nbsp;
+        <sup>2</sup>Computer Science School<br>
+        Purdue University, West Lafayette, IN, USA<br>
+        * Equal contribution
+      </p>
+      <div class="affiliation-logos">
+        <a href="https://www.purdue.edu/" target="_blank" rel="noopener noreferrer">
+          <img src="media/purdue_logo.svg" alt="Purdue University">
+        </a>
+      </div>
+    </article>
+    <img
+      class="publication-visual"
+      src="media/robotdog_whisker.svg?v=2"
+      alt="Robot dog equipped with tactile whisker sensors"
+    >
+  </div>
+  <p class="publication-description">This project enables quadruped robots to perceive physical properties of their surroundings, such as stiffness and compliance, in the wild through tactile sensing and construct physically grounded 3D point clouds.</p>
+</section>
+
+<section id="active-locomotion-gallery" class="media-gallery">
+  <h2>Selected Video Gallery II</h2>
+
+  <div class="gallery-tabs" role="tablist" aria-label="Active loco-manipulation video gallery">
+    <button class="gallery-btn" type="button" role="tab" aria-selected="false" data-src="media/rebot_sim.mp4" data-title="isaac sim">isaac sim</button>
+    <button class="gallery-btn active" type="button" role="tab" aria-selected="true" data-src="media/efficient_nav.mp4" data-title="efficient navigation">efficient nav</button>
+  </div>
+
+  <figure class="media-gallery-item">
+    <h3 id="active-gallery-title">efficient navigation</h3>
+    <video
+      id="active-gallery-video"
+      src="media/efficient_nav.mp4"
+      controls
+      muted
+      playsinline
+      preload="metadata"
+      aria-label="efficient navigation"
+    ></video>
   </figure>
 </section>
 
@@ -150,6 +238,29 @@
       galleryVideo.src = src;
       galleryVideo.load();
       galleryVideo.play().catch(() => {});
+    });
+  });
+
+  const activeGalleryButtons = document.querySelectorAll('#active-locomotion-gallery .gallery-btn');
+  const activeGalleryTitle = document.getElementById('active-gallery-title');
+  const activeGalleryVideo = document.getElementById('active-gallery-video');
+
+  activeGalleryButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const { src, title } = button.dataset;
+
+      activeGalleryButtons.forEach((item) => {
+        item.classList.remove('active');
+        item.setAttribute('aria-selected', 'false');
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
+      activeGalleryTitle.textContent = title;
+
+      activeGalleryVideo.src = src;
+      activeGalleryVideo.setAttribute('aria-label', title);
+      activeGalleryVideo.load();
+      activeGalleryVideo.play().catch(() => {});
     });
   });
 
